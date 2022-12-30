@@ -4,14 +4,30 @@
 ## **Table of contents**
 
 - [Project Descriptions](#project-descriptions)
+- [File Descriptions](#file-descriptions)
+- [Requirements](#requirements)
 - [Blog post](#blog-post)
 - [Project Steps](#project-steps)
 - [Improvements](#improvements)
+- [Licensing, Authors, Acknowledgements, etc.](#licensing-authors-acknowledgements-etc)
 
 
 ## **Project Descriptions**
 
 Sparkify is an imaginary start-up that offers a music streaming service to users in the United States. Customers can choose between a free tier with advertisements or a premium subscription with a flat monthly fee. The service allows users to change, upgrade, or cancel their subscriptions at any time. It is important for Sparkify to keep its users satisfied because every time a user interacts with the service, it generates data that can provide insights on how to improve the service and keep the business thriving. To predict which users are likely to churn (downgrade to the free tier or cancel their subscription entirely), the data team analyzes log files that contain information about each user interaction, such as the user's ID, the name of the song played, the length of the song, and the artist's name. However, the log file has become too large to be processed on a standard desktop computer, so Sparkify has turned to the Apache Spark distributed file system. Udacity provides a 12GB dataset on AWS S3 that can be used to analyze the data using a Spark cluster on the cloud through AWS or IBM Cloud.
+
+## **File Descriptions**
+- Sparkify.ipynb: A notebook file containing code for processing data, extracting features, training a model, and evaluating its performance.
+- Sparkify.html: The notebook but save as with html format.
+- README.md: provide context to get the information about the project.
+
+## **Requirements**
+- Numpy
+- Pandas
+- Matplotlib
+- Seaborn
+- Missingno
+- Pyspark
 
 ## **Blog post**
 You can find a brief blog entry I wrote on Medium: https://medium.com/@pmthoai2304/sparkify-churned-user-project-6fca93854014
@@ -34,4 +50,7 @@ There are several ways to potentially improve the current results:
 - Experimenting with different parameters for the selected models
 - Adding additional features, such as customer location (city/state), which may be relevant for predicting churn. For example, some states may have higher churn rates due to certain lifestyle factors or the nature of the environment, while others may have lower churn rates due to a more settled and resistant to change population.
 
-
+## **Licensing, Authors, Acknowledgements, etc.**
+The dataset provided by Udacity has 128MB in JSON format. Moreover, you can clone the dataset by using the following code:
+"!pip install -U --no-cache-dir gdown --pre
+!gdown --id 1GlqW-889y-JW7t6WaqMANRawKCc4Hre9"
